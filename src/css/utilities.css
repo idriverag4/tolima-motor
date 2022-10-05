@@ -1,10 +1,10 @@
 /* text color */
 .text-primary {
-   color: #3cce96;
+   color: #FA434D;
 }
 
 .text-secondary {
-   color: #14a36c;
+   color: #E30613;
 }
 
 .text-other {
@@ -13,7 +13,7 @@
 
 /* background */
 .bg-primary {
-   background: #3cce96;
+   background: #FA434D;
    color: #fff;
 }
 
@@ -40,17 +40,17 @@
 }
 
 .btn-primary {
-   background: #3cce96;
+   background: #FA434D;
    color: #fff;
 }
 
 .btn-primary:hover {
-   background: #14a36c;
+   background: #E30613;
 }
 
 .btn-outline {
    background: transparent;
-   border: 1px solid #3cce96; 
+   border: 1px solid #FA434D; 
    color: #333; 
 }
 
