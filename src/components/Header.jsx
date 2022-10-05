@@ -1,4 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCar } from '@fortawesome/free-solid-svg-icons'
 
 export const Header = () => {
     return (
@@ -7,7 +9,7 @@ export const Header = () => {
                 <div id="navbar" className="navbar top">
                     <h1 className="logo">
                         <a href="#home">
-                            <span className="text-primary"><i className="fas fa-car"></i> Tolima-</span>Motor's   
+                            <span className="text-primary"><FontAwesomeIcon icon={faCar} size="1x" /> Tolima-</span>Motor's   
                         </a>
                     </h1>
                     <nav>
