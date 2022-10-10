@@ -3,13 +3,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCar } from '@fortawesome/free-solid-svg-icons'
 
 export const Header = () => {
+
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+        if (window.pageYOffset > 350) {
+            navbar.classList.remove('top')
+            if (!scrolled) {
+                navbar.style.transform = "translateY(-70px)";
+            }
+            setTimeout(function () {
+                navbar.style.transform = "translateY(0)";
+                scrolled = true;
+            }, 1);
+        } else {
+            navbar.classList.add('top');
+            scrolled = false;
+        }
+    } 
+
     return (
         <>
             <header className="hero">
                 <div id="navbar" className="navbar top">
                     <h1 className="logo">
                         <a href="#home">
-                            <span className="text-primary"><FontAwesomeIcon icon={faCar} size="1x" /> Tolima-</span>Motor's   
+                            <span className="text-primary"><FontAwesomeIcon icon={faCar} size="1x" /> Tolima-</span>Motor's
                         </a>
                     </h1>
                     <nav>
