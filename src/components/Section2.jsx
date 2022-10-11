@@ -6,21 +6,22 @@ export const Section2 = () => {
             <section class="flex-columns history">
                 <div class="row">
                     <div class="column">
-                        <div class="column-1" style={{marginTop:'10%'}}>
-                            <img src={img} alt="" style={{width:'100%', height:'150px'}}/>
+                        <div class="column-1">
+                            <img src={img} alt="" style={{width:'100%', height:'300px'}}/>
                         </div>
                     </div>
 
                     <div class="column">
                         <div class="column-2 bg-light">
                             <h4 class="text-secondary">Nosotros</h4>
-                            <h2>Una breve historia de Tolima-Motor's</h2>
-                            <p>
-                                Zeitaku, founded by <span class="text-secondary"><strong>'Uzumaki Naruto'</strong></span> and the
-                                <strong>'Uchiha'</strong> clan 50 years ago. These families have been in the hospitality industry ever
-                                since. Although it has undergone quite a bit of modernization and upkeep over the years, the main
-                                attraction, namely the Hokage molded statue and gorgeous hidden leaf village tress have remained the
-                                center for it's appeal.
+                            <h2>Una breve historia de <span class="text-secondary">Tolima-</span>Motor's</h2>
+                            <p> 
+                                Fundado por <span class="text-secondary"><strong>'Miller J. Barreto'</strong></span> hace 7 años. 
+                                Somos una empresa comprometida con nuestros clientes ofreciendo el mejor servicio de latonería, pintura y mantenimiento automotriz en fusagazugá.
+                            </p>
+                            <p>    
+                                Contamos con personal especializado de amplia experiencia y trayectoria, brindamos seguridad y satisfacción al cliente debido a que implementamos 
+                                repuestos y productos originales para garantizar un excelente trabajo.
                             </p>
                         </div>
                     </div>

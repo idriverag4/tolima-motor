@@ -1,27 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCar } from '@fortawesome/free-solid-svg-icons'
 
 export const Header = () => {
 
     const navbar = document.getElementById('navbar');
-    let scrolled = false;
+    const [scrolled, SetScrolled] = useState(false)
 
-    window.onscroll = function () {
-        if (window.pageYOffset > 350) {
-            navbar.classList.remove('top')
-            if (!scrolled) {
-                navbar.style.transform = "translateY(-70px)";
+    useEffect(() => {
+        window.onscroll = function () {
+            if (window.pageYOffset > 350) {
+                navbar.classList.remove('top')
+                if (!scrolled) {
+                    navbar.style.transform = "translateY(-70px)";
+                }
+                setTimeout(function () {
+                    navbar.style.transform = "translateY(0)";
+                    SetScrolled(true)
+                }, 1);
+            } 
+            
+            if (window.pageYOffset < 350) {
+                navbar.classList.add('top');
+                SetScrolled(false)
             }
-            setTimeout(function () {
-                navbar.style.transform = "translateY(0)";
-                scrolled = true;
-            }, 1);
-        } else {
-            navbar.classList.add('top');
-            scrolled = false;
         }
-    } 
+    }, [window.pageYOffset])
+    
+
 
     return (
         <>
