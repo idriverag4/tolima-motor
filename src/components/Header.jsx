@@ -5,29 +5,16 @@ import { faCar } from '@fortawesome/free-solid-svg-icons'
 export const Header = () => {
 
     const navbar = document.getElementById('navbar');
-    const [scrolled, SetScrolled] = useState(false)
-
+    const [scrolled, SetScrolled] = useState(0)
+    
     useEffect(() => {
         window.onscroll = function () {
-            if (window.pageYOffset > 350) {
-                navbar.classList.remove('top')
-                if (!scrolled) {
-                    navbar.style.transform = "translateY(-70px)";
-                }
-                setTimeout(function () {
-                    navbar.style.transform = "translateY(0)";
-                    SetScrolled(true)
-                }, 1);
-            } 
-            
-            if (window.pageYOffset < 350) {
-                navbar.classList.add('top');
-                SetScrolled(false)
-            }
+            SetScrolled(window.scrollY)    
+            if(scrolled >= 1) {
+                (scrolled > 350) ? navbar.classList.remove('top') : navbar.classList.add('top')
+            }        
         }
-    }, [window.pageYOffset])
-    
-
+    }, [window.scrollY])
 
     return (
         <>
@@ -58,10 +45,7 @@ export const Header = () => {
 
                 <div className="content">
                     <h1>Calidad y Cumplimiento</h1>
-                    <p>Con nosotros, estás a un paso de tener un vehículo como nuevo !!!</p>
-                    {/* <a href="about.html" className="btn btn-primary">
-                        <i className="fas fa-chevron-right"></i> Read More
-                    </a> */}
+                    <p> <strong>Con nosotros, estás a un paso de tener un vehículo como nuevo !!!</strong> </p>
                 </div>
             </header>
         </>

@@ -1,23 +1,5 @@
 
 
-   // Smooth Scrolling
-   $('#navbar a').on('click', function (e) {
-      if (this.hash !== '') {
-         e.preventDefault();
-
-         const hash = this.hash;
-
-         $('html, body').animate(
-            {
-               scrollTop: $(hash).offset().top - 50,
-            },
-            900
-         );
-      }
-   });
-
-
-
 // Tawk.to Chat box Script
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
