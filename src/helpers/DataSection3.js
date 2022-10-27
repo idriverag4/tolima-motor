@@ -1,6 +1,6 @@
-import img1 from '../img/rooms/room-1.jpg'
-import img2 from '../img/rooms/room-2.jpg'
-import img3 from '../img/rooms/room-3.jpg'
+import img1 from '../../img/rooms/room-1.jpg'
+import img2 from '../../img/rooms/room-2.jpg'
+import img3 from '../../img/rooms/room-3.jpg'
 
 export const DataSection3 = [
     {

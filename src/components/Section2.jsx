@@ -1,4 +1,4 @@
-import img from '../img//home/about.png'
+import img from '../../img//home/about.png'
 
 export const Section2 = () => {
     return (
