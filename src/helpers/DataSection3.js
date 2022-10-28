@@ -1,11 +1,8 @@
-import img1 from '../../img/rooms/room-1.jpg'
-import img2 from '../../img/rooms/room-2.jpg'
-import img3 from '../../img/rooms/room-3.jpg'
 
 export const DataSection3 = [
     {
         id: 1,
-        image: img1,
+        image: 'https://drive.google.com/uc?id=1SmUL_JLh5SfxfTbfvhePZRn85h3PClrO',
         title: 'Servicio de latonería',
         list: [
             {
@@ -28,7 +25,7 @@ export const DataSection3 = [
     },
     {
         id: 2,
-        image: img2,
+        image: 'https://drive.google.com/uc?id=1dvfsB6k5l4xCrgCULf7MGVvpT8C-1fiQ',
         title: 'Servicio de Pintura',
         list: [
             {
@@ -51,7 +48,7 @@ export const DataSection3 = [
     },
     {
         id: 3,
-        image: img3,
+        image: 'https://drive.google.com/uc?id=1PvACPSr1QJJZ2tdUopDnYM0YvwhtiMWi',
         title: 'Servicio de mecánica',
         list: [
             {

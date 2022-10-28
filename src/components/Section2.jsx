@@ -1,4 +1,3 @@
-import img from '../../img//home/about.png'
 
 export const Section2 = () => {
     return (
@@ -7,7 +6,7 @@ export const Section2 = () => {
                 <div className="row">
                     <div className="column">
                         <div className="column-1 bg-light">
-                            <img src={img} alt="" style={{width:'100%', height:'300px'}}/>
+                            <img src='https://drive.google.com/uc?id=19RdcTf3Ln4dzZzxDey-bm_adU4nz2CSw' alt="" style={{width:'100%', height:'300px'}}/>
                         </div>
                     </div>
 
